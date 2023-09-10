@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+
 select *,
 ordersellingprice - ordercostprice as orderprofit
 from RAW.GLOBALMART.ORDERS
